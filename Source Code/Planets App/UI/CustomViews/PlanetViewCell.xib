@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell alpha="0.0" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PlanetViewCell" rowHeight="174" id="KGk-i7-Jjw" userLabel="PlanetViewCell" customClass="PlanetViewCell" customModule="Planets_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="485" height="174"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="485" height="174"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0Y-fC-lbC">
+                        <rect key="frame" x="20" y="16" width="114.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="yiw-rh-j1T"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Climate Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buE-AZ-opk">
+                        <rect key="frame" x="20" y="54" width="134" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="hU3-Ji-9Ep"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terrain Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJM-j7-2bZ">
+                        <rect key="frame" x="20" y="92" width="129.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="IrC-aw-1po"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Population Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2pI-Rq-s92">
+                        <rect key="frame" x="20" y="130" width="160" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Nm4-1h-3SR"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="22" id="flV-kj-2NG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Baskerville-Bold" family="Baskerville" pointSize="20"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                <color key="tintColor" red="0.95685857529999996" green="0.95278674360000004" blue="0.96077853440000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="CJM-j7-2bZ" firstAttribute="top" secondItem="buE-AZ-opk" secondAttribute="bottom" constant="16" id="1Z3-HV-Uju"/>
+                    <constraint firstItem="u0Y-fC-lbC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="F66-mT-sXI"/>
+                    <constraint firstItem="buE-AZ-opk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Yb8-Ik-k2U"/>
+                    <constraint firstItem="2pI-Rq-s92" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="a7W-FM-wbn"/>
+                    <constraint firstItem="CJM-j7-2bZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hio-XF-t3E"/>
+                    <constraint firstItem="u0Y-fC-lbC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lea-EK-AVt"/>
+                    <constraint firstItem="buE-AZ-opk" firstAttribute="top" secondItem="u0Y-fC-lbC" secondAttribute="bottom" constant="16" id="lwb-7h-W8U"/>
+                    <constraint firstItem="2pI-Rq-s92" firstAttribute="top" secondItem="CJM-j7-2bZ" secondAttribute="bottom" constant="16" id="ppD-WH-PE6"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                        <integer key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" red="0.91372096540000003" green="0.90964990850000005" blue="0.91764158009999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <connections>
+                <outlet property="climateLabel" destination="buE-AZ-opk" id="bZZ-Hp-9sZ"/>
+                <outlet property="nameLabel" destination="u0Y-fC-lbC" id="ZyZ-y0-Wfm"/>
+                <outlet property="populationLabel" destination="2pI-Rq-s92" id="fei-ZS-crM"/>
+                <outlet property="terrainLabel" destination="CJM-j7-2bZ" id="Mah-Mn-x9a"/>
+            </connections>
+            <point key="canvasLocation" x="270.28985507246381" y="236.38392857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
